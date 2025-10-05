@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Luxe Essence | Clothes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Google Fonts (match index) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <!-- Custom CSS (existing) -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <!-- Navigation (same as index for consistency) -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Luxe Essence</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="perfumes.html">Perfumes</a></li>
+                            <li><a class="dropdown-item active" href="clothes.html">Clothes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link cart-icon" href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero (match index hero style) -->
+    <header class="hero clothes-hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 col-md-10 mx-auto text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold text-white mb-3">Designer Clothes</h1>
+                    <p class="lead text-white mb-4">Elevate your wardrobe with our curated collection of premium garments.</p>
+                    <a href="#products" class="btn btn-outline-light btn-lg">Browse Collection</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters + Products -->
+    <section class="products-section py-5" id="products">
+        <div class="container">
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="section-title mb-0">Clothes Collection</h2>
+                    <p class="section-subtitle">Handpicked designer pieces</p>
+                </div>
+                <div class="col-md-6 text-md-end" data-aos="fade-left">
+                    <div class="d-inline-flex align-items-center">
+                        <label class="me-2">Sort by:</label>
+                        <select class="form-select form-select-sm w-auto">
+                            <option>Featured</option>
+                            <option>Newest</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- LEFT: sidebar filters on larger screens -->
+                <aside class="col-lg-3 mb-4">
+                    <div class="card filter-card" data-aos="fade-right">
+                        <div class="card-body">
+                            <h5 class="mb-3">Filters</h5>
+                            <div class="mb-3">
+                                <h6 class="mb-2 small">Category</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Digital print">
+                                    <label class="form-check-label" for="cat-dresses">Digital print </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Lawn">
+                                    <label class="form-check-label" for="cat-Lawn">Lawn</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Coton">
+                                    <label class="form-check-label" for="cat-Coton">Coton</label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Embroidered">
+                                    <label class="form-check-label" for="cat-Embroidered">Embroidered</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Luxury Pret">
+                                    <label class="form-check-label" for="cat-Luxury Pret">Luxury Pret</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Formal Wear">
+                                    <label class="form-check-label" for="cat-Formal Wear">Formal Wear</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cat-Casual Wear">
+                                    <label class="form-check-label" for="cat-Casual Wear">Casual Wear</label>
+                                </div>
+                                
+
+                            <div class="mb-3">
+                                <h6 class="mb-2 small">Color</h6>
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <button class="color-swatch" data-color="#000000" title="Black"></button>
+                                    <button class="color-swatch" data-color="#ffffff" title="White"></button>
+                                    <button class="color-swatch" data-color="#c59d5f" title="Gold"></button>
+                                    <button class="color-swatch" data-color="#6b7280" title="Gray"></button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-2 small">Price</h6>
+                                <input type="range" class="form-range" min="50" max="1000" step="10">
+                                <div class="small text-muted mt-2">Use slider to limit price range</div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- RIGHT: products grid -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                        <!-- Product card example 1 -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-card">
+                                <div class="product-img position-relative">
+                                    <span class="badge bg-danger">New</span>
+                                    <img src="images/clothes1.jpg" alt="Silk Evening Dress" class="img-fluid">
+                                    <div class="product-overlay">
+                                        <a href="product-detail.html?id=101" class="btn btn-sm btn-outline-light">Quick View</a>
+                                    </div>
+                                </div>
+                                <div class="product-info p-3">
+                                    <h5 class="product-title mb-1">Silk Evening Dress</h5>
+                                    <p class="product-category mb-2 small text-muted">Dresses</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">$250.00</div>
+                                        <button class="btn btn-primary btn-sm add-to-cart" data-id="101">Add to Cart</button>
+                                    </div>
+                                    <div class="mt-2 d-flex gap-2 align-items-center">
+                                        <div class="swatch" style="background:#000"></div>
+                                        <div class="swatch" style="background:#fff"></div>
+                                        <div class="swatch" style="background:#c59d5f"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product card example 2 -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-card">
+                                <div class="product-img position-relative">
+                                    <img src="images/clothes2.jpg" alt="Tailored summer" class="img-fluid">
+                                    <div class="product-overlay">
+                                        <a href="product-detail.html?id=102" class="btn btn-sm btn-outline-light">Quick View</a>
+                                    </div>
+                                </div>
+                                <div class="product-info p-3">
+                                    <h5 class="product-title mb-1">Tailored summer</h5>
+                                    <p class="product-category mb-2 small text-muted">Summer</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">$180.00</div>
+                                        <button class="btn btn-primary btn-sm add-to-cart" data-id="102">Add to Cart</button>
+                                    </div>
+                                    <div class="mt-2 d-flex gap-2 align-items-center">
+                                        <div class="swatch" style="background:#6b7280"></div>
+                                        <div class="swatch" style="background:#111827"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product card example 3 -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="product-card">
+                                <div class="product-img position-relative">
+                                    <span class="badge bg-primary">Best Seller</span>
+                                    <img src="images/clothes3.jpg" alt="Linen Summer Dress" class="img-fluid">
+                                    <div class="product-overlay">
+                                        <a href="product-detail.html?id=103" class="btn btn-sm btn-outline-light">Quick View</a>
+                                    </div>
+                                </div>
+                                <div class="product-info p-3">
+                                    <h5 class="product-title mb-1">Linen Summer Dress</h5>
+                                    <p class="product-category mb-2 small text-muted">Dresses</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">$120.00</div>
+                                        <button class="btn btn-primary btn-sm add-to-cart" data-id="103">Add to Cart</button>
+                                    </div>
+                                    <div class="mt-2 d-flex gap-2 align-items-center">
+                                        <div class="swatch" style="background:#f3f4f6"></div>
+                                        <div class="swatch" style="background:#c59d5f"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- more product cards can be duplicated similarly -->
+                    </div>
+
+                    <!-- Pagination / Load more -->
+                    <div class="row mt-5">
+                        <div class="col-12 text-center">
+                            <button class="btn btn-outline-dark">Load More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same structure as index) -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-heading">Luxe Essence</h4>
+                    <p>Elevating your style and presence with premium perfumes and designer clothes.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Shop</h5>
+                    <ul class="footer-links">
+                        <li><a href="perfumes.html">Perfumes</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-heading">Contact</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, New York</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@luxeessence.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="copyright">© 2023 Luxe Essence. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // small UI enhancement: color-swatch buttons set active color for filtering (client-side only)
+        document.querySelectorAll('.color-swatch').forEach(btn => {
+            btn.style.width = '28px';
+            btn.style.height = '28px';
+            btn.style.borderRadius = '50%';
+            btn.style.border = '1px solid rgba(0,0,0,0.1)';
+            btn.style.cursor = 'pointer';
+            btn.style.background = btn.dataset.color;
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.color-swatch').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+    <!-- Custom JS (existing) -->
+    <script src="js/main.js"></script>
+</body>
+</html>
